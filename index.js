@@ -4,29 +4,29 @@
 // const actualLang = localStorage.getItem("bodyLang");
 
 
-const bodyLang = document.querySelector('body');
-const englishSelector = document.querySelector('.lang-selector-en');
-const spanishSelector = document.querySelector('.lang-selector-es');
+// const bodyLang = document.querySelector('body');
+// const englishSelector = document.querySelector('.lang-selector-en');
+// const spanishSelector = document.querySelector('.lang-selector-es');
 
 
-function toSpanish(e) {
-  if (bodyLang.getAttribute('lang') === 'en') {
-    bodyLang.setAttribute('lang', 'es');
-    inEnglish = false;
-  }
-}
+// function toSpanish(e) {
+//   if (bodyLang.getAttribute('lang') === 'en') {
+//     bodyLang.setAttribute('lang', 'es');
+//     inEnglish = false;
+//   }
+// }
 
-function toEnglish(e) {
-  if (bodyLang.getAttribute('lang') === 'es') {
-    bodyLang.setAttribute('lang', 'en');
-    inEnglish = true;
-  }
-}
+// function toEnglish(e) {
+//   if (bodyLang.getAttribute('lang') === 'es') {
+//     bodyLang.setAttribute('lang', 'en');
+//     inEnglish = true;
+//   }
+// }
 
 
 
-englishSelector.addEventListener('click', toEnglish);
-spanishSelector.addEventListener('click', toSpanish);
+// englishSelector.addEventListener('click', toEnglish);
+// spanishSelector.addEventListener('click', toSpanish);
 
 
 // language watcher

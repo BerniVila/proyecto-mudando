@@ -208,10 +208,10 @@ a {
 language selection ***************************************
 */
 
-body[lang='es'] [lang='en'],
+/* body[lang='es'] [lang='en'],
 body[lang='en'] [lang='es'] {
   display: none;
-}
+} */
 
 .lang-selector a:first-child::after {
   content: ' \00a0 \00a0 \00a0 \00a0 \00a0 |';
@@ -492,7 +492,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* visibility: hidden; */
+  visibility: hidden;
   overflow: hidden;
 }
 
