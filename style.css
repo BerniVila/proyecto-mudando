@@ -232,7 +232,7 @@ body[lang='en'] [lang='es'] {
   /* width: 100%; */
   background-image: url('/img/hero-big.jpg');
   background-size: cover;
-  /* background-position: center; */
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   perspective: 2px;
@@ -395,7 +395,7 @@ footer {
   text-transform: uppercase;
   cursor: pointer;
   letter-spacing: 0.1rem;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .contact-button:hover {
@@ -461,7 +461,7 @@ footer {
   height: 0;
   transform: translateY(-50%);
   visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 /* .contact-form label {
