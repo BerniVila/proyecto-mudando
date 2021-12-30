@@ -1,20 +1,25 @@
 
 // language selector
+// let inEnglish = false;
+// const actualLang = localStorage.getItem("bodyLang");
+
 
 const bodyLang = document.querySelector('body');
 const englishSelector = document.querySelector('.lang-selector-en');
 const spanishSelector = document.querySelector('.lang-selector-es');
-// const langSelector = document.querySelector('.lang-selector');
+
 
 function toSpanish(e) {
   if (bodyLang.getAttribute('lang') === 'en') {
     bodyLang.setAttribute('lang', 'es');
+    inEnglish = false;
   }
 }
 
 function toEnglish(e) {
   if (bodyLang.getAttribute('lang') === 'es') {
     bodyLang.setAttribute('lang', 'en');
+    inEnglish = true;
   }
 }
 
@@ -22,6 +27,55 @@ function toEnglish(e) {
 
 englishSelector.addEventListener('click', toEnglish);
 spanishSelector.addEventListener('click', toSpanish);
+
+
+// language watcher
+
+// window.onload = function() {
+
+//   if(typeof(Storage) !== "undefined"){
+
+//      localStorage.setItem("lang", bodyLang.getAttribute('lang'));
+
+     
+// if (actualLang === 'en') {
+//   bodyLang.setAttribute("lang", actualLang);
+// }
+
+
+//    }
+ 
+// };
+
+//CONTACT FORM
+
+const contactForm = document.querySelector('.contact-form');
+const contactButton = document.querySelector('.contact-button');
+let isFormVisible = false;
+
+function setVisible() {
+  if (isFormVisible) {
+    contactForm.style.display = 'none';
+    contactForm.style.visibility = 'hidden';
+    contactForm.style.height = 0;
+    contactForm.style.transformation = 'translateY(-50)';
+    isFormVisible = false;
+  } else {
+    contactForm.style.display = 'flex';
+    contactForm.style.visibility = 'visible';
+    contactForm.style.height = 50 + 'rem';
+    contactForm.style.transformation = 'translateY(50)';
+    isFormVisible = true;
+  }
+  // contactForm.style.display = 'flex';
+  // contactForm.style.visibility = 'visible';
+  // contactForm.style.height = 50 + 'rem';
+  // contactForm.style.transformation = 'translateY(50)';
+  // isFormVisible = true;
+}
+
+contactButton.addEventListener('click', setVisible);
+
 
 
 // responsive burger menu
@@ -49,4 +103,15 @@ if (!isBurgerOpen) {
   burgerBar.classList.remove('top-bar-rise');
   isBurgerOpen = false;
 }
+});
+
+
+
+// parallax effect
+
+const parallax = document.querySelector('.parallax');
+
+window.addEventListener('scroll', function() {
+  let offset = window.pageYOffset;
+  parallax.style.backgroundPositionY = offset * (-0.5) + 'px';
 });

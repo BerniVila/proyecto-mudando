@@ -78,6 +78,7 @@ body {
   padding: 0;
   background-color: var(--color-primary);
   font-family: var(--font-primary), sans-serif;
+  max-width: 1400px;
 }
 
 a {
@@ -163,7 +164,7 @@ a {
   color: rgb(167, 168, 170);
 }
 
-.nav-links a::before {
+/* .nav-links a::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -178,7 +179,7 @@ a {
   left: 0;
   right: auto;
   width: 100%;
-}
+} */
 
 .lang-selector {
   font-family: var(--font-secondary);
@@ -192,6 +193,7 @@ a {
   color: var(--color-secondary);
   transition: all 0.1s ease-in-out;
   font-weight: 10;
+  font-size: 1.2rem;
   text-transform: lowercase;
   text-decoration: none;
   padding: 0 0.5rem;
@@ -218,12 +220,33 @@ body[lang='en'] [lang='es'] {
 /*
  * Hero section ***************************************
  */
+/*parallax */
 
-.hero-pic {
-  width: 100%;
+
+
+
+
+.hero-section {
   position: relative;
-  margin-bottom: 5rem;
+  height: 80vh;
+  /* width: 100%; */
+  background-image: url('/img/hero-big.jpg');
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  perspective: 2px;
+
 }
+
+
+
+
+/* .hero-pic {
+  width: 100%;
+   position: relative; 
+  margin-bottom: 5rem;
+} */
 
 .hero-text {
   text-align: center;
@@ -302,10 +325,10 @@ q::after {
   height: 90%;
 }
 
-.methodology .method-img:first-child,
+/* .methodology .method-img:first-child,
 .methodology .method-img:nth-child(9) {
   padding-top: 0.6rem
-}
+} */
 
 .methodology {
   padding: 5rem;
@@ -313,7 +336,7 @@ q::after {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: .5rem;
-  grid-row-gap: .5rem;
+  grid-row-gap: 2rem;
 }
 
 .div1 {
@@ -351,6 +374,7 @@ q::after {
  * Footer ******************************
  */
 
+
 footer {
   background-color: var(--color-primary);
   margin-top: 10rem;
@@ -362,7 +386,8 @@ footer {
   color: var(--color-secondaryry);
   font-family: var(--font-contact);
   font-size: 1.2rem;
-  max-width: fit-content;
+  /* max-width: fit-content; */
+  width: max-content;
   padding: 2rem 4.5rem;
   margin: 2rem auto;
   border: 1px solid var(--color-secondary);
@@ -377,6 +402,7 @@ footer {
   color: var(--color-primary);
   background-color: var(--color-secondary);
 }
+
 
 .footer-social {
   display: flex;
@@ -416,6 +442,44 @@ footer {
 }
 
 
+/* FORMULARIO DE CONTACTO */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 50rem;
+  padding: 2rem;
+  background-color: gray;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  height: 0;
+  transform: translateY(-50%);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* .contact-form label {
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  color: var(--color-secondary);
+  margin: 0.5rem;
+  padding: 2rem;
+} */
+
+.contact-form input {
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
+  padding: 2rem;
+}
+
 /* // burger menu */
 
 .burger {
@@ -428,7 +492,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  visibility: hidden;
+  /* visibility: hidden; */
   overflow: hidden;
 }
 

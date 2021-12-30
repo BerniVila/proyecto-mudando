@@ -52,9 +52,9 @@
   </header>
 
   <main>
-
-<img class="hero-pic" src="/img/hero-big.jpg" alt="">
-
+<div class="hero-section parallax"></div>
+<!-- <img class="hero-pic" src="img/hero-big.jpg" loading="lazy" alt=""> -->
+</div>
 
 
     <section class="hero-text" lang="es">
@@ -73,13 +73,36 @@
 
 
   <footer>
+
+    <!-- FORMULARIO DE CONTACTO -->
+
+
+<form class="contact-form" method="post" action="contact.php">
+	<label for="nombre">Nombre:</label>
+	<input type="text" name="nombre" id="nombre">
+
+  <label for="mail">Correo</label>
+	<input type="email" name="mail" id="mail">
+
+	<label for="asunto">Asunto</label>
+	<input type="text" name="asunto" id="asunto">
+
+	<label for="mensaje">Mensaje: </label>
+	<textarea name="mensaje" id="mensaje"></textarea>
+
+	<input type="submit">
+
+</form>
+
+
+
     <div class="contact-button">
-      <a href="contact.html">
+      <!-- <a href=""> -->
         <div class="contact-button-text">
           <span lang="es">Contáctanos</span>
           <span lang="en">Contact us</span>
         </div>
-      </a>
+      <!-- </a> -->
     </div>
 
     <div class="footer-social">
