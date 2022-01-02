@@ -37,14 +37,14 @@
 
 //      localStorage.setItem("lang", bodyLang.getAttribute('lang'));
 
-     
+
 // if (actualLang === 'en') {
 //   bodyLang.setAttribute("lang", actualLang);
 // }
 
 
 //    }
- 
+
 // };
 
 //CONTACT FORM

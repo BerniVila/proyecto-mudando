@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Sachlette Signature';
+    src: url('SachletteSignature.woff2') format('woff2'),
+        url('SachletteSignature.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

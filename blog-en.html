@@ -43,10 +43,11 @@
 
   <main>
 
-<img class="hero-pic" src="/img/hero-big.jpg" alt="">
+    <img class="hero-pic" src="/img/hero-big.jpg" alt="">
 
     <section class="hero-text">
-      Our vision of design leads us to transform spaces into functional and aesthetic places, which also reflect ideas and satisfy customer needs.
+      Our vision of design leads us to transform spaces into functional and aesthetic places, which also reflect ideas
+      and satisfy customer needs.
       The optimization of space, order, the careful selection of pieces and materials and the harmony between
       all of them is our goal.
     </section>
@@ -54,12 +55,32 @@
 
 
   <footer>
+
+    <!-- FORMULARIO DE CONTACTO -->
+
+
+    <form class="contact-form" method="post" action="contact.php">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre">
+
+      <label for="mail">Correo</label>
+      <input type="email" name="mail" id="mail">
+
+      <label for="asunto">Asunto</label>
+      <input type="text" name="asunto" id="asunto">
+
+      <label for="mensaje">Mensaje: </label>
+      <textarea name="mensaje" id="mensaje"></textarea>
+
+      <input type="submit">
+
+    </form>
     <div class="contact-button">
-      <a href="contact.html">
-        <div class="contact-button-text">
-          <span>Contact us</span>
-        </div>
-      </a>
+      <!-- <a href=""> -->
+      <div class="contact-button-text">
+        <span lang="es">Contact us</span>
+      </div>
+      <!-- </a> -->
     </div>
 
     <div class="footer-social">

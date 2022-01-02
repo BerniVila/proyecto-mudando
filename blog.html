@@ -43,7 +43,7 @@
 
   <main>
 
-<img class="hero-pic" src="/img/hero-big.jpg" alt="">
+    <img class="hero-pic" src="/img/hero-big.jpg" alt="">
 
 
 
@@ -57,12 +57,32 @@
 
 
   <footer>
+
+    <!-- FORMULARIO DE CONTACTO -->
+
+
+    <form class="contact-form" method="post" action="contact.php">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre">
+
+      <label for="mail">Correo</label>
+      <input type="email" name="mail" id="mail">
+
+      <label for="asunto">Asunto</label>
+      <input type="text" name="asunto" id="asunto">
+
+      <label for="mensaje">Mensaje: </label>
+      <textarea name="mensaje" id="mensaje"></textarea>
+
+      <input type="submit">
+
+    </form>
     <div class="contact-button">
-      <a href="contact.html">
-        <div class="contact-button-text">
-          <span>Contáctanos</span>
-        </div>
-      </a>
+      <!-- <a href=""> -->
+      <div class="contact-button-text">
+        <span lang="es">Contáctanos</span>
+      </div>
+      <!-- </a> -->
     </div>
 
     <div class="footer-social">
